@@ -1,0 +1,25 @@
+<div id="projects" class="project">
+    <h1>{{projectsText[indexByLanguage].title}}</h1>
+    <p class="experience-text">{{projectsText[indexByLanguage].subtitle}}</p>
+    
+    <div class="projects-division">
+    <button (click)="goToLeftProjects()"><</button>
+    <div class="project-cards">
+        <div class="card" *ngFor="let index of projectsIndex">
+            <a href="{{projectsList[index][1]}}" target="_blank">
+                <img src="{{projectsList[index][0]}}" alt="{{projectsList[index][2]}}" title="{{projectsList[index][2]}}">
+            </a>
+            <h2>{{projectsList[index][2][indexByLanguage]}}</h2>
+            <p>{{projectsList[index][3][indexByLanguage]}}</p>
+            <span class="keywords">> {{projectsList[index][4]}}</span>
+
+            <div *ngIf="projectsList[index][5] == 'true'">
+                <a href="{{projectsList[index][6]}}" target="_blank">
+                    <button class="try-button">{{projectsText[indexByLanguage].button}}</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <button class="more-projects-button" (click)="goToRightProjects()">></button>
+    </div>
+</div>

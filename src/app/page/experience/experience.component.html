@@ -1,0 +1,23 @@
+<div id="experience" class="experience">
+    <h1>{{experiencesTexts[indexByLanguage].title}}</h1>
+    <p class="experience-text">{{experiencesTexts[indexByLanguage].text}}</p>
+    
+    <div class="languages">
+        <img *ngFor="let language of languagesAndToolsList" src="{{language[0]}}" title="{{language[1]}}" alt="{{language[2]}}" width="50px" height="50px">&nbsp;
+    </div>
+
+    <h2>Skills</h2>
+    <div class="skills-experience">
+        <ul class="list">
+            <li *ngFor="let skill of developmentSkillsList[indexByLanguage]">{{skill}}</li>
+        </ul>
+        <ul class="list">
+            <li *ngFor="let skill of professionalSkillsList[indexByLanguage]">{{skill}}</li>
+        </ul>
+    </div>
+    <a
+    href="https://www.linkedin.com/in/anajulianeiverth/?locale=en_US"
+    target="_blank"
+    class="Anchor button"
+    ><button>{{experiencesTexts[indexByLanguage].button}}</button></a>
+</div>

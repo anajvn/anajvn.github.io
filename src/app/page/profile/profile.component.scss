@@ -1,0 +1,69 @@
+/* General styling for the profile section */
+#profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 20px;
+    background-color: #f0f0f0;
+    margin: 0 auto;
+}
+
+/* Styling for the profile text container */
+.profile-text-container {
+    text-align: center;
+    max-width: 600px;
+    margin-right: 20px;
+    font-family: Overpass;
+}
+
+/* Styling for the profile heading */
+.profile-heading {
+    font-size: 3em;
+    color: #4682b4;
+}
+
+/* Styling for the profile text */
+.profile-text {
+    font-size: 1.1em;
+    color: #3a3c3d;
+    line-height: 1.6;
+    padding-bottom: 1.5em;
+}
+
+/* Styling for the buttons */
+button {
+    background-color: #4682b4; 
+    color: #fff; 
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #345f80; 
+}
+
+/* Styling for the profile image */
+.profile-image {
+    max-width: 20em;
+    border-radius: 50%;
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    #profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-text-container {
+        margin-right: 0;
+    }
+
+    .profile-image {
+        margin-top: 20px;
+    }
+}
